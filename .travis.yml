@@ -18,10 +18,10 @@ cache:
 
 install:
   - npm install
-  - npm run update-webdriver
 
 before_script:
   - yarn global add @angular/cli
+  - npm run update-webdriver
 
 branches:
   only:
@@ -40,10 +40,10 @@ after_failure:
 
 notifications:
   email:
-    - fmanrique@tangerinesoftware.com # this guy loves emails
+    # - fmanrique@tangerinesoftware.com # this guy loves emails
     - yyang@tangerinesoftware.com
 
   on_success: always
-  on_failure: always # default: always
+  on_failure: never # default: always
 
 
