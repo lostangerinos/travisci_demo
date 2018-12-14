@@ -1,4 +1,4 @@
-# angularUnitTesting
+# Angular Unit Tests and e2e Tests
 
 This is the default Angular Project. It is used here to test setup for continuous integration (CI) using Travis CI so that test cases can be automated without the need for anyone to manually run them. See: https://travis-ci.com/
   
