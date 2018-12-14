@@ -39,10 +39,9 @@ after_failure:
 
 notifications:
   email:
-    # - fmanrique@tangerinesoftware.com # this guy loves emails
-    - yyang@tangerinesoftware.com
+    - fmanrique@tangerinesoftware.com # this guy loves emails
 
   on_success: always
-  on_failure: never # default: always
+  on_failure: always # default: always
 
 
