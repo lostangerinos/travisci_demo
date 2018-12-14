@@ -21,12 +21,11 @@ install:
 
 before_script:
   - yarn global add @angular/cli
-  - npm run update-webdriver
+  - npx webdriver-manager update
 
 branches:
   only:
   - master
-  - test_branch
 
 jobs:
   include:
