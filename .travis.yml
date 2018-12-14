@@ -18,10 +18,10 @@ cache:
 
 install:
   - npm install
+  - npm run update-webdriver
 
 before_script:
   - yarn global add @angular/cli
-  - npx webdriver-manager update
 
 branches:
   only:
