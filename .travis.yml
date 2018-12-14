@@ -1,0 +1,49 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - "8"
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+cache:
+  directories:
+     - ./node_modules
+
+install:
+  - npm install
+
+before_script:
+  - yarn global add @angular/cli
+
+branches:
+  only:
+  - master
+  - test_branch
+
+jobs:
+  include:
+    - stage: "Tests: "
+      name: "Unit tests "
+      script: npm run test -- --progress=false --watch=false --browsers=ChromeHeadlessCI
+    - script: npx webdriver-manager update
+    - script: npm run e2e -- --webdriverUpdate=false --devServerTarget=angular.io-example:serve --protractorConfig=protractor-ci.conf.js
+      name: "E2E tests"
+
+after_failure:
+
+notifications:
+  email:
+    - fmanrique@tangerinesoftware.com # this guy loves emails
+    - yyang@tangerinesoftware.com
+
+  on_success: always
+  on_failure: always # default: always
+
+
