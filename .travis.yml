@@ -21,7 +21,7 @@ install:
 
 before_script:
   - yarn global add @angular/cli
-  - npx webdriver-manager update
+  - webdriver-manager update
 
 branches:
   only:
