@@ -10,34 +10,36 @@ To setup:
 
 - First, clone or download this repository onto your computer
 - Go on your favorite editor (like Visual Studio Code) and open the root folder of the project
-- run the command: npm install
-- run command: webdriver-manager update
+- run the command: **npm install**
+- run command: **webdriver-manager update**
 
 How to run Unit tests:
 
-- run the command: npm test or ng test
+- run the command: **npm test** or **ng test**
 
 ![unit tests](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/unit_tests.png)
 
 How to run E2E tests :
 
 With webdriver(visual support): 
-- run: npm start
-- run: protractor (path to (project root)/src/e2e/files/protractor.conf.js). Note: You may have to open a new window of your editor to do this as you need to leave the application running through the previous command. For example, if you open the folder e2e under (project root)/src/e2e, you run the command: protractor files/protractor.conf.js
+- run: **npm start**
+- run: **protractor (path to (project root)/src/e2e/files/protractor.conf.js)**. Note: You may have to open a new window of your editor to do this as you need to leave the application running through the previous command. For example, if you open the folder e2e under (project root)/src/e2e, you run the command: **protractor files/protractor.conf.js**
 - You will see a window open, and this window will navigate to localhost:4200, where the application is hosted and will run the tests directly against the compiled application. 
 - the e2e tests written so far are in the file: (project root)/src/e2e/files/src/ang-spec.e2e-spec.ts
 
 ![e2e manual](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/e2e_manual.png)
 
 No webdriver: 
-- run the command: npm run e2e 
+- run the command: **npm run e2e**
 
 ![e2e auto](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/e2e_auto.png)
 
 How to Trigger Travis test builds (Automatic builds):
 
-(Note: you need Git or GitHub Desktop installed on your computer commit)
-- Commit something (this is the equivalent of a check-in in TFS), anything to this repository and Travis will run the unit tests and the e2e tests automatically
+- Push something (this is the equivalent of a check-in in TFS), anything to this repository and Travis will run the unit tests and the e2e tests automatically
+- Note: you need Git (command line version) or GitHub Desktop (UI version) installed on your computer to be able to commit. 
+- The simplest way is via GitHub desktop. Download here: https://desktop.github.com/. 
+- Details on how to commit and push: https://help.github.com/desktop/guides/contributing-to-projects/committing-and-reviewing-changes-to-your-project/ 
 - Go to: https://travis-ci.org/dashboard to monitor the progress of the tests (Log in using this GitHub account) 
 
 
