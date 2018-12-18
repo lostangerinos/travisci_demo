@@ -41,5 +41,10 @@ Manually run the unit tests and e2e tests:
 - The simplest way is via GitHub desktop. Download here: https://desktop.github.com/. 
 - Details on how to commit and push: https://help.github.com/desktop/guides/contributing-to-projects/committing-and-reviewing-changes-to-your-project/ 
 - Go to: https://travis-ci.org/dashboard to monitor the progress of the tests (Log in using this GitHub account) 
+- the setup for Travis can be found in the .travis.yml file at the root of the project
 
+_A successful build looks like:_
+![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/likeaboss.png)
 
+_A failed build looks like:_
+![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/failed_travis.png)
