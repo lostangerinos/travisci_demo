@@ -17,7 +17,7 @@ How to run Unit tests:
 
 - run the command: npm test or ng test
 
-![unit tests]https://github.com/lostangerinos/travisci_demo/blob/master/documentation/unit_tests.png
+![unit tests](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/unit_tests.png)
 
 How to run E2E tests :
 
@@ -27,7 +27,7 @@ With webdriver(visual support):
 - You will see a window open, and this window will navigate to localhost:4200, where the application is hosted and will run the tests directly against the compiled application. 
 - the e2e tests written so far are in the file: (project root)/src/e2e/files/src/ang-spec.e2e-spec.ts
 
-![e2e manual]https://github.com/lostangerinos/travisci_demo/blob/master/documentation/e2e_manual.png
+![e2e manual](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/e2e_manual.png)
 
 No webdriver: 
 - run the command: npm run e2e 
