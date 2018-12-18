@@ -53,5 +53,5 @@ First modify the code in your favorite editor:
 ![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/failed_tests.png)
 Then commit and push onto gitHub:
 ![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/commit%20failed.png)
-
+This will be the result:
 ![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/failed_travis.png)
