@@ -17,16 +17,22 @@ How to run Unit tests:
 
 - run the command: npm test or ng test
 
-How to run E2E tests :
+![unit tests]https://github.com/lostangerinos/travisci_demo/blob/master/documentation/unit_tests.png
 
-No webdriver: 
-- run the command: npm run e2e 
+How to run E2E tests :
 
 With webdriver(visual support): 
 - run: npm start
 - run: protractor (path to (project root)/src/e2e/files/protractor.conf.js). Note: You may have to open a new window of your editor to do this as you need to leave the application running through the previous command. For example, if you open the folder e2e under (project root)/src/e2e, you run the command: protractor files/protractor.conf.js
 - You will see a window open, and this window will navigate to localhost:4200, where the application is hosted and will run the tests directly against the compiled application. 
 - the e2e tests written so far are in the file: (project root)/src/e2e/files/src/ang-spec.e2e-spec.ts
+
+![e2e manual]https://github.com/lostangerinos/travisci_demo/blob/master/documentation/e2e_manual.png
+
+No webdriver: 
+- run the command: npm run e2e 
+
+![e2e auto](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/e2e_auto.png)
 
 How to Trigger Travis test builds (Automatic builds):
 
