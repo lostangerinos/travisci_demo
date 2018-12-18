@@ -43,8 +43,15 @@ Manually run the unit tests and e2e tests:
 - Go to: https://travis-ci.org/dashboard to monitor the progress of the tests (Log in using this GitHub account) 
 - the setup for Travis can be found in the .travis.yml file at the root of the project
 
-_A successful build looks like:_
+_A successful build:_
 ![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/likeaboss.png)
 
-_A failed build looks like:_
+_A failed build:_
+
+For example, we decide to break the functionality "user can select a hero and see their details": 
+First modify the code in your favorite editor:
+![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/failed_tests.png)
+Then commit and push onto gitHub:
+![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/commit%20failed.png)
+
 ![](https://github.com/lostangerinos/travisci_demo/blob/master/documentation/failed_travis.png)
